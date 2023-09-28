@@ -1,7 +1,5 @@
 package com.mjc.stage2.parser;
 
-import com.mjc.stage2.entity.AbstractTextComponent;
-
 import java.util.ArrayList;
 import java.util.List;
 
