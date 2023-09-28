@@ -24,4 +24,12 @@ public class RectangleValues {
     public void setPerimeter(double perimeter) {
         this.perimeter = perimeter;
     }
+
+    @Override
+    public String toString() {
+        return "RectangleValues{" +
+                "square=" + square +
+                ", perimeter=" + perimeter +
+                '}';
+    }
 }

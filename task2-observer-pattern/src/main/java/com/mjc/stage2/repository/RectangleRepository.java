@@ -36,4 +36,11 @@ public class RectangleRepository {
     public List<Rectangle> getRectangles() {
         return Collections.unmodifiableList(rectangles);
     }
+
+    @Override
+    public String toString() {
+        return "RectangleRepository{" +
+                "rectangles=" + rectangles +
+                '}';
+    }
 }

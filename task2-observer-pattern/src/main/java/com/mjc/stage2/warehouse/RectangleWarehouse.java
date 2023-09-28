@@ -32,4 +32,11 @@ public class RectangleWarehouse {
     public boolean remove(Integer rectangleId, RectangleValues rectangleValues) {
         return valueMap.remove(rectangleId, rectangleValues);
     }
+
+    @Override
+    public String toString() {
+        return "RectangleWarehouse{" +
+                "valueMap=" + valueMap +
+                '}';
+    }
 }

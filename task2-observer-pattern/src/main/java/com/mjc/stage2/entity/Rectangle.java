@@ -13,6 +13,7 @@ public class Rectangle implements Observable {
     private double sideB;
     private List<Observer> observers = new ArrayList<>();
     // Write your code here!
+
     public Rectangle(int id, double sideA, double sideB) {
         this.id = id;
         this.sideA = sideA;
@@ -62,5 +63,15 @@ public class Rectangle implements Observable {
         RectangleEvent event = new RectangleEvent(this);
         observers.forEach(observer -> observer.handleEvent(event));
     }
-// Write your code here!
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "id=" + id +
+                ", sideA=" + sideA +
+                ", sideB=" + sideB +
+                ", observers=" + observers +
+                '}';
+    }
+    // Write your code here!
 }
