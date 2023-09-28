@@ -9,6 +9,14 @@ import lombok.AllArgsConstructor;
 public class MaxPriceFilteringStrategy implements FilteringStrategy {
     private double maxPrice;
 
+    public double getMaxPrice() {
+        return maxPrice;
+    }
+
+    public void setMaxPrice(double maxPrice) {
+        this.maxPrice = maxPrice;
+    }
+
     @Override
     public boolean filter(Product product) {
         return product.getPrice() == maxPrice;
